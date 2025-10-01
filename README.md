@@ -1,59 +1,72 @@
-# FinkiHub
+# FINKI HUB
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
+Official landing page for the student-lead community of the Faculty of Computer Science and Engineering. 
+Built with AngularJS (component-based) and styled using Tailwind CSS and Font Awesome.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🛠️ Prerequisites
 
-```bash
-ng serve
-```
+Before you begin, ensure you have the following software installed:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* **Node.js**: Version **v20.x** or higher.
+* **npm**: Version **10.x** or higher (comes bundled with Node.js).
+* **Angular CLI**: The Angular Command Line Interface.
+    * This project specifically used **Angular CLI version 20.3.2**.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## ⚙️ Installation
 
-```bash
-ng generate component component-name
-```
+Follow these steps to set up the project locally:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1.  **Install the Angular CLI (if you haven't already):**
+    ```bash
+    npm install -g @angular/cli
+    ```
 
-```bash
-ng generate --help
-```
+2.  **Install project dependencies:**
+    Navigate to the project directory and run the following command to download all required packages:
+    ```bash
+    npm install
+    # or the shorthand: npm i
+    ```
 
-## Building
+---
 
-To build the project run:
+## 💻 Development Server
 
-```bash
-ng build
-```
+To start a local development server for testing:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+1.  **Run the serve command:**
+    ```bash
+    ng serve
+    ```
+2.  **Access the application:**
+    Open your browser and navigate to `http://localhost:4200/`.
 
-## Running unit tests
+The application will automatically reload whenever you modify any of the source files.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## 🏗️ Building the Project
 
-## Running end-to-end tests
+To build the project for deployment or production:
 
-For end-to-end (e2e) testing, run:
+1.  **Run the build command:**
+    ```bash
+    ng build
+    ```
+    To create an optimized production build, use the `--configuration production` (or simply `-c production`) flag:
+    ```bash
+    ng build --configuration production
+    ```
 
-```bash
-ng e2e
-```
+2.  **Output:**
+    This process compiles your project and stores the build artifacts (static files) in the `dist/(project name)/browser` directory.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## ⚖️ License
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is licensed under the **MIT License** - see the `LICENSE` file for details.

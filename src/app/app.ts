@@ -1,9 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Header } from './header/header';
+import { About } from './about/about';
+import { Github } from './github/github';
+import { Faq } from './faq/faq';
+import { Footer } from './footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [CommonModule, Header, About, Github, Faq, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

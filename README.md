@@ -5,7 +5,7 @@ Built with AngularJS (component-based) and styled using Tailwind CSS and Font Aw
 
 ---
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following software installed:
 
@@ -16,7 +16,7 @@ Before you begin, ensure you have the following software installed:
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 Follow these steps to set up the project locally:
 
@@ -34,7 +34,7 @@ Follow these steps to set up the project locally:
 
 ---
 
-## 💻 Development Server
+## Development Server
 
 To start a local development server for testing:
 
@@ -49,7 +49,7 @@ The application will automatically reload whenever you modify any of the source 
 
 ---
 
-## 🏗️ Building the Project
+## Building the Project
 
 To build the project for deployment or production:
 
@@ -63,10 +63,12 @@ To build the project for deployment or production:
     ```
 
 2.  **Output:**
-    This process compiles your project and stores the build artifacts (static files) in the `dist/(project name)/browser` directory.
+    This process compiles your project and stores the build artifacts (static files) in the `dist/` directory.
+    The `browser/` directory is for the client-side code that runs in the browser.
+    The `server/` is for the server-side code used for Node.js-based SSR.
 
 ---
 
-## ⚖️ License
+## License
 
 This project is licensed under the **MIT License** - see the `LICENSE` file for details.

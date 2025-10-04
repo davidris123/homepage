@@ -1,0 +1,11 @@
+name: finki-hub
+
+services:
+  site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ghcr.io/finki-hub/finki-hub-site:local
+    ports:
+      - "80:80"
+    restart: unless-stopped

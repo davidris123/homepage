@@ -16,6 +16,30 @@ Before you begin, ensure you have the following software installed:
 
 ---
 
+## Running with Docker Compose
+
+This project is set up for containerization, ensuring a consistent and reproducible environment.
+
+---
+
+### Local Development (Build from Dockerfile)
+
+| **Build & Run** | `docker compose -f compose.yaml up --build` |
+
+*Note: `compose.yaml` builds and tags the image as `ghcr.io/finki-hub/finki-hub:local`.*
+
+---
+
+### Production Deployment (Pull from GHCR)
+
+
+| **Login** | `docker login ghcr.io` |
+| **Deploy** | `docker compose -f compose.prod.yaml up -d` |
+
+*Note: `compose.prod.yaml` pulls `ghcr.io/finki-hub/finki-hub:latest`. Adjust the image tag in this file if using commit SHAs or other tags.*
+
+You can access the website through `http://localhost`
+
 ## Installation
 
 Follow these steps to set up the project locally:

@@ -24,19 +24,19 @@ This project is set up for containerization, ensuring a consistent and reproduci
 
 ### Local Development (Build from Dockerfile)
 
-| **Build & Run** | `docker compose -f compose.yaml up --build` |
+**Build & Run** `docker compose -f compose.yaml up --build` 
 
-*Note: `compose.yaml` builds and tags the image as `ghcr.io/finki-hub/finki-hub:local`.*
+*Note: `compose.yaml` builds and tags the image as `ghcr.io/finki-hub/homepage:local`.*
 
 ---
 
 ### Production Deployment (Pull from GHCR)
 
 
-| **Login** | `docker login ghcr.io` |
-| **Deploy** | `docker compose -f compose.prod.yaml up -d` |
+1. **Login**: `docker login ghcr.io` 
+2. **Deploy**: `docker compose -f compose.prod.yaml up -d` 
 
-*Note: `compose.prod.yaml` pulls `ghcr.io/finki-hub/finki-hub:latest`. Adjust the image tag in this file if using commit SHAs or other tags.*
+*Note: `compose.prod.yaml` pulls `ghcr.io/finki-hub/homepage:latest`. Adjust the image tag in this file if using commit SHAs or other tags.*
 
 You can access the website through `http://localhost`
 

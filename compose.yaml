@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: ghcr.io/finki-hub/finki-hub-site:local
+    image: ghcr.io/finki-hub/homepage:local
     ports:
       - "80:80"
     restart: unless-stopped

@@ -32,6 +32,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          platforms: linux/amd64
+          platforms: linux/amd64,linux/arm64
           tags: |
-            ghcr.io/finki-hub/finki-hub-site:latest
+            ghcr.io/finki-hub/homepage:latest
